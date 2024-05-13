@@ -1,0 +1,3 @@
+[submodule "apps/website"]
+	path = apps/website
+	url = git@github.com:krishnans2006/website.git
