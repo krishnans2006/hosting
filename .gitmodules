@@ -7,3 +7,6 @@
 [submodule "apps/tjcsl-discord-bot"]
 	path = apps/tjcsl-discord-bot
 	url = git@github.com:krishnans2006/tjcsl-discord-bot.git
+[submodule "apps/chesscordv2"]
+	path = apps/chesscordv2
+	url = git@github.com:krishnans2006/ChessCordv2.git
