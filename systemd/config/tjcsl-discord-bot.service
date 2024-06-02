@@ -1,0 +1,16 @@
+[Unit]
+Description=TJ CSL Discord Bot
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/hosting/apps/tjcsl-discord-bot
+ExecStartPre=/bin/bash -c 'until host discord.com; do sleep 1; done'
+ExecStart=/home/ubuntu/.local/bin/poetry run python -u /home/ubuntu/hosting/apps/tjcsl-discord-bot/tjcsl_discord_bot/main.py
+Restart=on-failure
+RestartSec=60
+User=ubuntu
+Group=ubuntu
+
+[Install]
+WantedBy=multi-user.target

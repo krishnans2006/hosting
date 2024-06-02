@@ -4,3 +4,6 @@
 [submodule "apps/gitcord"]
 	path = apps/gitcord
 	url = git@github.com:krishnans2006/gitcord.git
+[submodule "apps/tjcsl-discord-bot"]
+	path = apps/tjcsl-discord-bot
+	url = git@github.com:krishnans2006/tjcsl-discord-bot.git
