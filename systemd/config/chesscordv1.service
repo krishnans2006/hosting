@@ -1,0 +1,16 @@
+[Unit]
+Description=ChessCord v1.0
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/hosting/apps/chesscordv1
+ExecStartPre=/bin/bash -c 'until host discord.com; do sleep 1; done'
+ExecStart=/home/ubuntu/hosting/apps/chesscordv1/venv/bin/python -u /home/ubuntu/hosting/apps/chesscordv1/main.py
+Restart=on-failure
+RestartSec=60
+User=ubuntu
+Group=ubuntu
+
+[Install]
+WantedBy=multi-user.target

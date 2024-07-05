@@ -10,3 +10,6 @@
 [submodule "apps/chesscordv2"]
 	path = apps/chesscordv2
 	url = git@github.com:krishnans2006/ChessCordv2.git
+[submodule "apps/chesscordv1"]
+	path = apps/chesscordv1
+	url = git@github.com:krishnans2006/ChessCord.git
