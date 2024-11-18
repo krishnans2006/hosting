@@ -1,0 +1,13 @@
+[Unit]
+Description=Wakapi
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/wakapi/compose.yml up --detach"
+ExecStop=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/wakapi/compose.yml stop"
+
+[Install]
+WantedBy=multi-user.target
