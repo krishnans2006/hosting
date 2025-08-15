@@ -1,0 +1,13 @@
+[Unit]
+Description=Vaultwarden
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/vaultwarden/compose.yaml up --detach"
+ExecStop=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/vaultwarden/compose.yaml stop"
+
+[Install]
+WantedBy=multi-user.target
