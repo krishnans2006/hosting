@@ -6,7 +6,17 @@ services:
     environment:
       DOMAIN: "https://vaultwarden.krishy.dev"  # required when using a reverse proxy; your domain; vaultwarden needs to know it's https to work properly with attachments
       SIGNUPS_ALLOWED: "false"  # Deactivate this with "false" after you have created your account so that no strangers can register
+      SHOW_PASSWORD_HINT: "false"
+      PUSH_ENABLED: "true"
+      PUSH_INSTALLATION_ID: "/run/secrets/push_installation_id"
+      PUSH_INSTALLATION_KEY: "/run/secrets/push_installation_key"
     volumes:
       - /home/ubuntu/hosting/apps/vaultwarden/data:/data
     ports:
       - 3001:80
+
+secrets:
+  push_installation_id:
+    environment: PUSH_INSTALLATION_ID
+  push_installation_key:
+    environment: PUSH_INSTALLATION_KEY
