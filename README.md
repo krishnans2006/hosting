@@ -7,8 +7,8 @@ This repository handles my personal site and bot hosting on the cloud.
 | ChessCord v1 | Discord Bot | Python -> Systemd |
 | ChessCord v2 | Discord Bot | Python -> Systemd |
 | GitCord | Discord Bot | Python -> Systemd |
-| TJ CSL Discord Bot | Discord Bot | Python -> Systemd |
-| Personal Website | Website | Python -> Gunicorn (:5000) -> Systemd -> Nginx (:80, www.) |
+| TJ CSL | Discord Bot | Python -> Systemd |
+| Personal | Website | Python -> Gunicorn (:5000) -> Systemd -> Nginx (:80, www.) |
 | Wakapi | Website | Go (:3000) -> Docker (:3100) -> Systemd -> Nginx (:80, waka.) |
 | Vaultwarden | Website | Server (:80) -> Docker (:3001) -> Systemd -> Nginx (:80 -> :443, vaultwarden.) |
 
