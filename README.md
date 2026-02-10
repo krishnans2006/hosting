@@ -11,6 +11,7 @@ This repository handles my personal site and bot hosting on the cloud.
 | Personal | Website | Python -> Gunicorn (:5000) -> Systemd -> Nginx (:80, www.) |
 | Wakapi | Website | Docker (:3000 -> :3100) -> Systemd -> Nginx (:80, waka.) |
 | Vaultwarden | Website | Docker (:80 -> :3001) -> Systemd -> Nginx (:80 -> :443, vaultwarden.) |
+| Atuin | Website | Docker (:8888 -> :3002) -> Systemd -> Nginx (:80 -> :443, atuin.) |
 
 ## SSL Setup
 
