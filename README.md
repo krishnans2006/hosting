@@ -9,8 +9,8 @@ This repository handles my personal site and bot hosting on the cloud.
 | GitCord | Discord Bot | Python -> Systemd |
 | TJ CSL | Discord Bot | Python -> Systemd |
 | Personal | Website | Python -> Gunicorn (:5000) -> Systemd -> Nginx (:80, www.) |
-| Wakapi | Website | Go (:3000) -> Docker (:3100) -> Systemd -> Nginx (:80, waka.) |
-| Vaultwarden | Website | Server (:80) -> Docker (:3001) -> Systemd -> Nginx (:80 -> :443, vaultwarden.) |
+| Wakapi | Website | Docker (:3000 -> :3100) -> Systemd -> Nginx (:80, waka.) |
+| Vaultwarden | Website | Docker (:80 -> :3001) -> Systemd -> Nginx (:80 -> :443, vaultwarden.) |
 
 ## SSL Setup
 
