@@ -4,7 +4,7 @@ services:
     container_name: vaultwarden
     restart: always
     environment:
-      DOMAIN: "https://vaultwarden.krishy.dev"  # required when using a reverse proxy; your domain; vaultwarden needs to know it's https to work properly with attachments
+      DOMAIN: "https://vault.krishy.dev"  # required when using a reverse proxy; your domain; vaultwarden needs to know it's https to work properly with attachments
       SIGNUPS_ALLOWED: "false"  # Deactivate this with "false" after you have created your account so that no strangers can register
       SHOW_PASSWORD_HINT: "false"
       PUSH_ENABLED: "true"
