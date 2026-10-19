@@ -1,0 +1,25 @@
+services:
+  mc:
+    image: itzg/minecraft-server:latest
+    tty: true
+    stdin_open: true
+    environment:
+      EULA: "TRUE"
+      MOTD: "Krishnan's Minecraft Server"
+      ENABLE_WHITELIST: "true"
+      WHITELIST_FILE: "whitelist.json"
+      UID: "1001"
+      GID: "1001"
+    volumes:
+      - "./data:/data"
+    ports:
+      - "25565:25565"
+  router:
+    image: itzg/mc-router
+    depends_on:
+      - mc
+    environment:
+      MAPPING: |
+        mc.krishy.dev=mc:25565
+    #ports:
+    #  - "25565:25565"
