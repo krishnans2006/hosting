@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     environment:
       KOITO_DEFAULT_USERNAME: krishnan
-      KOITO_DEFAULT_THEME: black
+      KOITO_DEFAULT_THEME: varia
       KOITO_SUBSONIC_URL: https://music.krishy.dev
       KOITO_SUBSONIC_PARAMS: ${KOITO_SUBSONIC_PARAMS}
     volumes:
