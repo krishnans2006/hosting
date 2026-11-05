@@ -1,0 +1,14 @@
+services:
+  koito:
+    image: gabehf/koito:latest
+    container_name: koito
+    restart: unless-stopped
+    environment:
+      KOITO_DEFAULT_USERNAME: krishnan
+      KOITO_DEFAULT_THEME: black
+      KOITO_SUBSONIC_URL: https://music.krishy.dev
+      KOITO_SUBSONIC_PARAMS: ${KOITO_SUBSONIC_PARAMS}
+    volumes:
+      - ./koito:/etc/koito
+    ports:
+      - "3004:4110"

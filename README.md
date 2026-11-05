@@ -12,6 +12,7 @@ This repository handles my personal site and bot hosting on the cloud.
 | vaultwarden | Website | Docker (:80 -> :3001) -> Systemd -> Nginx (:80 -> :443, vaultwarden.) |
 | atuin | Website | Docker (:8888 -> :3002) -> Systemd -> Nginx (:80 -> :443, atuin.) |
 | wakapi | Website | Docker (:3000 -> :3003) -> Systemd -> Nginx (:80, waka.) |
+| koito | Website | Docker (:4110 -> :3004) -> Systemd -> Nginx (:80, koito.) |
 
 ## App Setup
 

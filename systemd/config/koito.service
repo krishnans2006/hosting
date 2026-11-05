@@ -1,0 +1,14 @@
+[Unit]
+Description=Koito
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/home/ubuntu/hosting/apps/koito
+ExecStart=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/koito/compose.yaml up --detach"
+ExecStop=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/koito/compose.yaml stop"
+
+[Install]
+WantedBy=multi-user.target
