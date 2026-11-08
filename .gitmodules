@@ -13,6 +13,3 @@
 [submodule "apps/chesscordv1"]
 	path = apps/chesscordv1
 	url = git@github.com:krishnans2006/ChessCord.git
-[submodule "apps/hackalphax"]
-	path = apps/hackalphax
-	url = git@github.com:hackalphax/website.git
