@@ -6,8 +6,8 @@ Requires=docker.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/wakapi/compose.yml up --detach"
-ExecStop=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/wakapi/compose.yml stop"
+ExecStart=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/wakapi/compose.yaml up --detach"
+ExecStop=/bin/bash -c "docker compose -f /home/ubuntu/hosting/apps/wakapi/compose.yaml stop"
 
 [Install]
 WantedBy=multi-user.target
